@@ -2,15 +2,15 @@ const express = require('express');
 
 const router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
+// Import the model (museum.js) to use its database functions.
 const muse = require('../models/museum.js');
 
 // Create all our routes and set up logic within those routes where required.
 router.get('/', (req, res) => {
     muse.all((data) => {
     const hbsObject = {
-      ///////////////////////////////////
-      //cats: data, change to museums: data ///////////////////////////////////////////////////////////////
+      //////////////////////////////////////////////////////////////////////////////
+      //cats: data, change to museums: data, (TABLE NAME: data,) ////////////////////
         cats: data,
     };
     console.log(hbsObject);
