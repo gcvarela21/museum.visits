@@ -7,8 +7,8 @@ const connection = mysql.createConnection({
   user: 'root',
   // NOTE: Be sure to add your MySQL password here! we defaulted to : password
   password: 'password',
-  // database: 'museum_visits_db',
-  database: 'cat_db',
+  database: 'museum_visits_db',
+
 });
 
 // Make connection.

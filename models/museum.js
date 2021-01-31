@@ -5,18 +5,18 @@ const muse = {
   all(cb) {
     /////////////////////////////////////////////
     /////////////////////////////////////////////
-    // Change 'cats' to 'museums' aka table name///
-    orm.all('cats', (res) => cb(res));
+    // 'museums' aka table name///
+    orm.all('museums', (res) => cb(res));
   },
   // The variables cols and vals are arrays.
   create(cols, vals, cb) {
-    orm.create('cats', cols, vals, (res) => cb(res));
+    orm.create('museums', cols, vals, (res) => cb(res));
   },
   update(objColVals, condition, cb) {
-    orm.update('cats', objColVals, condition, (res) => cb(res));
+    orm.update('museums', objColVals, condition, (res) => cb(res));
   },
   delete(condition, cb) {
-    orm.delete('cats', condition, (res) => cb(res));
+    orm.delete('museums', condition, (res) => cb(res));
   },
 };
 

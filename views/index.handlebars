@@ -1,38 +1,39 @@
-<h1>Cats!</h1>
+<h1>My Museums List</h1>
+<h2>Museums I want to visit:</h2>
 
-<h2>Cats that are not sleepy!</h2>
 
 <ul>
-  {{#each cats}}
-  {{#unless sleepy}}
-  {{> cats/cat-block sleep=true}}
-  {{/unless}}
+  {{#each museums}}
+    {{#if visited}}
+      {{> museums/museum-block visit=false}}
+     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
-
+<h2>Museums I have visited:</h2>
 <ul>
-  {{#each cats}}
-  {{#if sleepy}}
-  {{> cats/cat-block sleep=false}}
-  {{/if}}
+  {{#each museums}}
+    {{#unless visited}}
+       {{> museums/museum-block visit=true}}
+    {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+
+
+<h2>Add a Museum</h2>
 <form id="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="art">Museum Name:</label>
+    <input type="text" id="art" place="place">
   </div>
 
   <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" id="sleepy" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0" id="awake"> Awake
+    <label for="visited">Have you been there yet?</label><br>
+    <input type="radio" name="visited" value="1" id="visited" checked> Yes<br>
+    <input type="radio" name="visited" value="0" id="notYet"> Not Yet
   </div>
 
-  <button type="submit">Add Cat</button>
+  <button type="submit">Add Museum</button>
 </form>
