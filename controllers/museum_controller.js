@@ -29,7 +29,7 @@ router.post('/api/museums', (req, res) => {
 });
 
 router.put('/api/museums/:id', (req, res) => {
-  const condition = `id = ${req.params.id}`;
+  var condition = "id = " + req.params.id;
 
   console.log('condition', condition);
 
@@ -47,7 +47,7 @@ router.put('/api/museums/:id', (req, res) => {
 
 ///////////////// api/table name/ id
 router.delete('/api/museums/:id', function(req, res) {
-  var condition = `id = ${req.params.id}`;
+  var condition = "id = " + req.params.id;
 
   muse.delete(condition, function(result) {
     if (result.affectedRows === 0) {
