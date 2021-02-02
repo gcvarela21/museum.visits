@@ -13,11 +13,15 @@ router.get('/', (req, res) => {
       museums: data,
     };
     console.log(hbsObject);
+    //connects to the view folder 
     res.render('index', hbsObject);
   });
 });
 
+// api / route name i make up - no relation to table or views
+// always have a unique route to we don't always default to home page
 router.post('/api/museums', (req, res) => {
+     //create() was made in the model/museum.js
     muse.create(['place', 'visited'], [req.body.place, req.body.visited], (result) => {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });

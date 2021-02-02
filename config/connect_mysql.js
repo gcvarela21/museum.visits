@@ -2,12 +2,12 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: process.env.host ||'localhost',
   port: 3306,
-  user: 'root',
+  user: process.env.user || 'root',
   // NOTE: Be sure to add your MySQL password here! we defaulted to : password
-  password: 'password',
-  database: 'museum_visits_db',
+  password: process.env.password || 'password',
+  database: process.env.db || 'museum_visits_db',
 
 });
 
