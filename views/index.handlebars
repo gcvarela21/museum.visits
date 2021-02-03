@@ -12,11 +12,11 @@
       </div>
       <div class="col-12 justify-content-center">
           <ul>
-             {{#each museums}}
-              {{#unless visited}}
-                {{> museums/museum-block visit=false}}
-              {{/unless}}
-             {{/each}}
+           {{#each museums}}
+             {{#if visited}}
+               {{> museums/museum-block visit=false}}
+             {{/if}}
+           {{/each}}
           </ul>
        </div>
     </div>
@@ -28,11 +28,11 @@
       </div>
       <div class="col-12 justify-content-center">
           <ul>
-            {{#each museums}}
-             {{#if visited}}
-               {{> museums/museum-block visit=true}}
-             {{/if}}
-            {{/each}}
+             {{#each museums}}
+              {{#unless visited}}
+                {{> museums/museum-block visit=true}}
+              {{/unless}}
+             {{/each}}
            </ul>
         </div>
     </div>

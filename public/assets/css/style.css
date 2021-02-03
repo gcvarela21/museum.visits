@@ -3,6 +3,15 @@ nav {
   background: none;
   color: dimgrey;
 }
+h1{
+  font-size: 50px;
+}
+h2 {
+  font-size: 35px;
+}
+li {
+  font-size: 16px;
+}
 i {
 
     background-color: none;
