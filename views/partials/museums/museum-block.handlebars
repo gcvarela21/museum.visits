@@ -1,10 +1,10 @@
-<li>
-	{{place}}
-
-	<button class="change-visit" data-id="{{id}}"data-newvisit="{{visit}}">
-		{{#if visit}}Visit Again!{{else}}Been There!{{/if}}
-	</button>
-
-	<button class="delete-museum trash"><i  data-id="{{this.id}}" class="fas fa-dumpster"></i> </button>
-</li>
+<div class="d-flex flex-row">
+	<li>
+		{{place}}
+		<button class="change-visit" data-id="{{id}}"data-newvisit="{{visit}}">
+			{{#if visit}}Visit Again!{{else}}Been There!{{/if}}
+		</button>
+		<button class="delete-museum trash"><i  data-id="{{this.id}}" class="fas fa-dumpster"></i> </button>
+	</li>
+</div>
 

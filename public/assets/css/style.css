@@ -1,3 +1,8 @@
+nav {
+  background-color: none;
+  background: none;
+  color: dimgrey;
+}
 i {
 
     background-color: none;
@@ -11,6 +16,10 @@ i {
       background: none;
   }
 
+
+  .icon{
+    padding-left: 10px;
+  }
   .trash {
     border: none;
   }

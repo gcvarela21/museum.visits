@@ -1,39 +1,66 @@
-<h1>My Museums List</h1>
-<h2>Museums I want to visit:</h2>
-
-
-<ul>
-  {{#each museums}}
-    {{#if visited}}
-      {{> museums/museum-block visit=false}}
-     {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Museums I have visited:</h2>
-<ul>
-  {{#each museums}}
-    {{#unless visited}}
-       {{> museums/museum-block visit=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-
-
-<h2>Add a Museum</h2>
-<form id="create-form">
-
-  <div class="form-group">
-    <label for="art">Museum Name:</label>
-    <input type="text" id="art" place="place">
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+  <h1>My Museums List</h1>
   </div>
+</div>
 
-  <div class="form-group">
-    <label for="visited">Have you been there yet?</label><br>
-    <input type="radio" name="visited" value="1" id="visited" checked> Yes<br>
-    <input type="radio" name="visited" value="0" id="notYet"> Not Yet
+<div class="row">
+  <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
+    <div class="row">
+      <div class="col-12 justify-content-center">
+          <h2>Museums I Want to Visit:</h2>
+      </div>
+      <div class="col-12 justify-content-center">
+          <ul>
+             {{#each museums}}
+              {{#unless visited}}
+                {{> museums/museum-block visit=false}}
+              {{/unless}}
+             {{/each}}
+          </ul>
+       </div>
+    </div>
   </div>
+  <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
+    <div class="row">
+      <div class="col-12 justify-content-center">
+          <h2>Museums I have visited:</h2>
+      </div>
+      <div class="col-12 justify-content-center">
+          <ul>
+            {{#each museums}}
+             {{#if visited}}
+               {{> museums/museum-block visit=true}}
+             {{/if}}
+            {{/each}}
+           </ul>
+        </div>
+    </div>
+  </div>
+</div>
 
-  <button type="submit">Add Museum</button>
-</form>
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <h2>Add a Museum</h2>
+  </div>
+  <div class="col-12 d-flex justify-content-center">
+    <form class="create-form">
+
+        <div class="form-group">
+           <label for="art">Museum Name:</label>
+           <input type="text" id="art" place="place">
+        </div>
+
+        <div class="form-group">
+            <label for="visited">Have you been there yet?</label><br>
+            <input type="radio" name="visited" value="1" id="visited" checked> Yes<br>
+            <input type="radio" name="visited" value="0" id="notYet"> Not Yet
+        </div>
+
+        <button type="submit">Add Museum</button>
+      </form>
+    </div>
+</div>
+
+
+
