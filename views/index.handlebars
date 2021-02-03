@@ -5,12 +5,12 @@
 </div>
 
 <div class="row">
-  <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
+  <div class="col-sm-12 col-lg-6">
     <div class="row">
-      <div class="col-12 justify-content-center">
+      <div class="col-12 ghost">
           <h2>Museums I Want to Visit:</h2>
       </div>
-      <div class="col-12 justify-content-center">
+      <div class="col-12">
           <ul>
            {{#each museums}}
              {{#if visited}}
@@ -21,12 +21,12 @@
        </div>
     </div>
   </div>
-  <div class="col-sm-12 col-lg-6 d-flex justify-content-center">
+  <div class="col-sm-12 col-lg-6">
     <div class="row">
-      <div class="col-12 justify-content-center">
+      <div class="col-12 ghost">
           <h2>Museums I have visited:</h2>
       </div>
-      <div class="col-12 justify-content-center">
+      <div class="col-12">
           <ul>
              {{#each museums}}
               {{#unless visited}}
@@ -40,7 +40,7 @@
 </div>
 
 <div class="row">
-  <div class="col-12 d-flex justify-content-center">
+  <div class="col-12 d-flex justify-content-center ghost">
     <h2>Add a Museum</h2>
   </div>
   <div class="col-12 d-flex justify-content-center">

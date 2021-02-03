@@ -1,34 +1,65 @@
-nav {
-  background-color: none;
-  background: none;
-  color: dimgrey;
+body, div {
+  background-color:white;
 }
+nav {
+  font-family: 'New Rocker', cursive;
+  background: rgba(0, 0, 0, 0.2);
+  border: black;
+  border-style: 1px, solid;
+  color: black;
+}
+.ghost {
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
 h1{
   font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 h2 {
   font-size: 35px;
+  font-family: 'New Rocker', cursive;
+  color: black;
+  padding-left: 5px;
 }
+
 li {
-  font-size: 16px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  list-style-type: none;
+  padding: 0px, 0px, 0px, 0px;
+  margin-bottom: 3px;
 }
 i {
-
     background-color: none;
     background: none;
-    color: dimgrey;
   }
+form {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
 
   button {
-
-      background-color: none;
+      border-color: none;
       background: none;
+      background-color: #505050;
+      border-radius: 30px;
+      color:white;
+      font-size: 12px;
   }
 
 
   .icon{
-    padding-left: 10px;
+    color: black;
+    margin-right: 15px;
   }
   .trash {
     border: none;
+    border-color: none;
+    background: none;
+    background-color: none;
+    color:white;    
   }
