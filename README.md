@@ -6,7 +6,7 @@ A Web based application to keep track of the places I want to go to.
 
 As an Art History student I was always encouraged and sometimes reaquired to see art work in person. Seeing some of these historial and even monumental works is always more awe inspiring than looking through a text book or scrolling through the world wide web. There is no better way to experience something than to see it for yourself. When ever I have an opportunity to travel I make it a point to visit the major art and history museums. I value expanding my cultural knowlege. This web based application is now my Museum Travel wish list, that gigves me the abblity to add places, mark those that I have been to, and move previously visited places back to my wish list to experience again.
 
-![GIF Visual of The Deployed Web Application](raw=true)
+![GIF Visual of The Deployed Web Application](https://github.com/gcvarela21/museum.visits/blob/main/museum.gif?raw=true)
 
 ______________________________________________________________________________
 
