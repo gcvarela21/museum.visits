@@ -22,14 +22,14 @@ router.get('/', (req, res) => {
 // always have a unique route to we don't always default to home page
 router.post('/api/museums', (req, res) => {
      //create() was made in the model/museum.js
-    muse.create(['place', 'visited'], [req.body.place, req.body.visited], function (result) {
+    muse.create(['place', 'visited'], [req.body.place, req.body.visited], (result) => {
         // Send back the ID of the new quote
         res.json({ id: result.insertId });
       });
 });
 
 router.put('/api/museums/:id', (req, res) => {
-  var condition = `id = ${req.params.id}`;
+  const condition = `id = ${req.params.id}`;
 
   console.log('condition', condition);
 
@@ -47,7 +47,7 @@ router.put('/api/museums/:id', (req, res) => {
 
 ///////////////// api/table name/ id
 router.delete('/api/museums/:id', function(req, res) {
-  var condition = `id = ${req.params.id}`;
+  const condition = `id = ${req.params.id}`;
 
   muse.delete(condition, function(result) {
     if (result.affectedRows === 0) {
