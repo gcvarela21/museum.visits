@@ -1,5 +1,7 @@
 # Museum Visits Journal
 
+![License](https://img.shields.io/static/v1?label=License&message=MIT&color=blueviolet&style=plastic)
+
 A Web based application to keep track of the places I want to go to.
 
 ## Summary
